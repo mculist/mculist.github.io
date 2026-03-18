@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MCUlist ✪</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <section id="lockScreen" class="lock-screen shell">
+    <div class="lock-card glass">
+      <h1>✪ MCUlist</h1>
+      <p id="lockText">Loading...</p>
+      <input id="pinInput" type="password" inputmode="numeric" maxlength="12" placeholder="Enter PIN (numbers only)" />
+      <button id="pinBtn" class="btn primary">Continue</button>
+      <p class="tiny">Family timeline tracker • cloud synced</p>
+    </div>
+  </section>
+
+  <main id="app" class="app hidden shell">
+    <header class="topbar glass">
+      <div>
+        <h1>✪ MCUlist</h1>
+        <p class="sub">Chronological MCU tracker</p>
+      </div>
+      <button id="clearAllBtn" class="btn danger">Clear All Data</button>
+    </header>
+
+    <section id="status" class="status"></section>
+    <ul id="movieList" class="movie-list"></ul>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
